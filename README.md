@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+Here’s a README file for your WPM Calculator application that includes information about its features, setup, and usage.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# WPM Calculator
 
-In the project directory, you can run:
+A typing speed test application that calculates words per minute (WPM) based on user input. The app includes features like dynamic prompts, a countdown timer, a progress bar, and dark mode support.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Dynamic Prompts:** Users receive different prompts based on their chosen test duration (1 or 2 minutes).
+- **Progress Bar:** Visual representation of the user's progress as they type.
+- **Countdown Timer:** Shows how much time is left in the test.
+- **Dark Mode Toggle:** Option to switch between light and dark themes.
+- **WPM Calculation:** Calculates and displays typing speed in words per minute based on user input.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup
 
-### `npm test`
+To run this application locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/wpm-calculator.git
+   cd wpm-calculator
+   ```
 
-### `npm run build`
+2. **Install Dependencies:**
+   Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed. Then, run:
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Run the Application:**
+   Start the development server with:
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   The application will be available at `http://localhost:3000`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Configuration
 
-### `npm run eject`
+### Changing Prompts
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Prompts are configured in the `prompts.js` file. You can modify the prompts based on different durations (1 minute, 2 minutes) by editing the `promptsByDuration` object.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Themes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The application supports light and dark themes. You can toggle between them using the switch in the app bar. The theme is managed using MUI's `ThemeProvider` and `createTheme`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+1. **Select Test Duration:**
+   Choose the duration of the typing test (1 or 2 minutes) from the dropdown menu.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Start Typing:**
+   Type the provided prompt text in the text area. The progress bar will fill as you type, and the countdown timer will show how much time is left.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Finish Test:**
+   The test will automatically end when you complete the prompt or when the timer runs out. Your typing speed in WPM will be displayed.
 
-### Code Splitting
+4. **Try Again:**
+   Click the "Try Again" button to reset the test and start over with a new prompt.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Example
 
-### Analyzing the Bundle Size
+Here's a sample view of the WPM Calculator:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![WPM Calculator Screenshot](link-to-screenshot)
 
-### Making a Progressive Web App
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Feel free to submit issues or pull requests to contribute to the development of this application. For any questions or suggestions, please contact [your-email@example.com](mailto:your-email@example.com).
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to customize the information in this README file, including the repository URL, your email address, and any additional details specific to your project.
